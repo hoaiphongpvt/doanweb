@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Giỏ Hàng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo-banner/logotheps.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <link rel="stylesheet" href="../assets/css_js/base.css">
+    <link rel="stylesheet" href="../assets/css_js/main.css">
+    <link rel="stylesheet" href="../assets/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="../assets/css_js/style.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar">
+                    <ul class="header__navbar--list">
+                        <li class="list-item list-item-separate">
+                            <a href="dangnhap.html" class="list-item-iconlink">Trang chủ</a>
+                        </li>
+                        <li class="list-item">
+                            <span class="list-item-title">Liên hệ</span>
+                            <a href="https://www.facebook.com/" class="list-item-iconlink">
+                                <i  class="ti-facebook list-item-icon"></i>
+                            </a>
+                            <a href="https://www.google.com/gmail/" class="list-item-iconlink">
+                                <i  class="ti-email list-item-icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar--list">
+                        <li class="list-item">
+                            <a href="" class="list-item-iconlink">
+                                <i class="ti-bell list-item-icon"></i>
+                                Thông báo
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-item-iconlink">
+                                <i class="ti-help-alt list-item-icon"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <a href="thongtinkhachhang.html" class="list-item list-item-bold list-item-separate">Xin chào theps</a>
+                        <a href="../index.html" class="list-item list-item-bold">Đăng xuất</a>
+                    </ul>
+                </nav>
+               <div class="header_with-search">
+                   <div class="header__logo">
+                    <img src="../assets/img/logo-banner/logotheps.png" class="header__logo-img">
+                   </div>
+                   <div class="header_search">
+                        <input type="text" placeholder="Tìm kiếm điện thoại..." class="header_search-input">
+                        <button class="header_search-button">
+                            <a href="timkiem.html" style="text-decoration: none;"><i class="ti-search header_search-icon"></i></a>
+                        </button>
+                    </div>
+                 <div class="header_cart">
+                    <i class="header_cart-icon ti-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+           <div class="grid">
+               <div class="content">
+                <div id="cart">
+                    <div class="phone-heading">
+                        <h3 class="phone-heading-text">Giỏ Hàng</h3>
+                    </div>
+                    <div class="cart-content">
+                        <div class="cart-heading">
+                            <div class="cart-heading-item">Sản phẩm</div>
+                            <div class="cart-heading-item">Đơn giá</div>
+                            <div class="cart-heading-item">Số lượng</div>
+                            <div class="cart-heading-item">Thao tác</div>
+                        </div>
+                    </div>
+                  <div class="cart-container">
+                    <div id="product1" class="cart-products" style="display: block;">
+                        <div class="cart-body">
+                            <div class="cart-body-item">
+                                <img src="../assets/apple/img/iphone-13-pro-max-gold-1-200x200.jpg" width="100px" height="100px" alt="">
+                                <p>Apple iPhone 13 Pro Max 128GB Gold</p>
+                            </div>
+                            <div class="cart-body-item"></div>
+                            <div class="cart-body-item"></div>
+                            <div class="cart-body-item"><p>32.990.000đ</p></div>
+                            <div class="cart-body-item"><button class="quantity">-</button><div class="quantity">1</div><button class="quantity">+</button></div>
+                            <div class="cart-body-item"> <button class="btn-delete" onclick="delete_product_warning()">Xóa</button></div>
+                        </div>
+                    </div>
+                    <div id="product2" class="cart-products" style="display: block;">
+                        <div class="cart-body">
+                            <div class="cart-body-item">
+                                <img src="../assets/samsung/img/samsung-galaxy-s21-ultra.jpg" width="100px" height="100px" alt="">
+                                <p>Samsung Galaxy S21 Ultra 5G 128GB</p>
+                            </div>
+                            <div class="cart-body-item"></div>
+                            <div class="cart-body-item"></div>
+                            <div class="cart-body-item"><p>21.990.000đ</p></div>
+                            <div class="cart-body-item"><button class="quantity">-</button><div class="quantity">1</div><button class="quantity">+</button></div>
+                            <div class="cart-body-item"> <button class="btn-delete"  onclick="delete_product_warning()">Xóa</button></div>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="total">
+                        <div>
+                            <p>Tổng tiền: 32.990.000đ</p>
+                        </div>
+                        <div>
+                            <button class="btn-pay" onclick="order()">Thanh toán</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <footer class="FOOTER">
+            <div class="head-footer">
+                <div class="grid">
+                    <ul class="head-footer-policy">
+                        <li>
+                            <img src="../assets/img/logo-banner/vanchuyen.png" class="policy-img">
+                            <span class="policy-text">Vận chuyển toàn quốc</span>
+                        </li>
+                        <li>
+                            <img src="../assets/img/logo-banner/1doi1.png"  class="policy-img">
+                            <span class="policy-text">1 đổi 1 trong 30 ngày</span>
+                        </li>
+                        <li>
+                            <img src="../assets/img/logo-banner/baogia.png"  class="policy-img">
+                            <span class="policy-text">Giá chuẩn, không sốc giá</span>
+                        </li>
+                        <li>
+                            <img src="../assets/img/logo-banner/baohiem.png"  class="policy-img">
+                            <span class="policy-text">Bảo hành máy 12 tháng</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-footer">
+                <div class="grid ">
+                    <div  class="footer">
+                        <div class="col1">
+                            <p>Lịch sử mua hàng</p>
+                            <p>Cộng tác bán hàng cùng ThePS</p>
+                            <p>Tìm hiểu về mua trả góp</p>
+                            <p>Chính sách bảo hành</p>
+                            <p>Xem thêm</p>
+                        </div>
+                        <div class="co  l2">
+                            <p>Giới thiệu về công ty</p>
+                            <p>Tuyển dụng</p>
+                            <p>Gửi ý kiến, khiếu nại</p>
+                            <p>Tìm siêu thị</p>
+                            <p>Xem bản mobile</p>
+                        </div>
+                        <div class="col3">
+                            <p>Tổng đài hỗ trợ (Miễn phí gọi)</p>
+                            <p>Gọi mua: 1800.1060 (7:30 - 22:00)</p>
+                            <p>Kỹ thuật: 1800.1763 (7:30 - 22:00)</p>
+                            <p>Khiếu nại: 1800.1062 (8:00 - 21:30)</p>
+                            <p>Bảo hành: 1800.1064 (8:00 - 21:00)</p>
+                        </div>
+                        <div class="col4">
+                            <p><i class="ti-facebook"> 3270.8k Người theo dõi</i></p>
+                            <p><i class="ti-youtube"> 829k Người đăng kí</i></p>
+                            <p><img src="../assets/img/logo-banner/logotheps.png" width="110px"></p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </footer>
+    </div>
+    <!--Canh bao xoa san pham-->
+    <div id="delete-product" style="display: none;">
+        <div class="modal">
+            <div class="modal_overlay"></div>
+                <div class="modal_body">    
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="cart-icon-check">
+                                <div  style="background-color: #cb1c22; border: 10px solid #cb1c22;"><i class="ti-alert"></i></div>
+                             </div>
+                            <div class="cart-notification">
+                                <p>Bạn vẫn muốn xóa sản phẩm này chứ!</p>
+                            </div>
+                            <div class="delete-product-btn">
+                                <button class="btn" onclick="hide_delete_product()">Không</button>
+                                <button class="btn btn--primary" onclick="delete_product2(),hide_delete_product()">Có</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Thanh toan-->
+    <div id="order" style="display: none;">
+        <div class="modal">
+            <div class="modal_overlay"></div>
+                <div class="modal_body">   
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="order-header">
+                                    <div class="order-img">
+                                        <img src="../assets/apple/img/iphone-13-pro-max-gold-1-200x200.jpg" alt="">
+                                    </div>
+                                    <div class="order-text">
+                                        <span>Điện thoại iPhone 13 Pro Max</span>
+                                        <p>Bộ nhớ: 128GB</p>
+                                        <p>Màu: Vàng</p>
+                                    </div>
+                            </div>
+                            <div class="auth-form__form">
+                                <div class="choose-pay">
+                                    <label for="">
+                                        <input type="radio" name="pay" id="">
+                                        Thanh toán khi nhận hàng
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="pay" id="">
+                                        Thanh toán qua ngân hàng
+                                    </label>
+                                </div>
+                                <div class="order-total">
+                                    <p class="order-total-text">Tổng tiền:</p>
+                                    <p class="order-total-price">32.990.000đ</p>
+                                </div>
+                            </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--back" onclick="hide_cart()">TRỞ LẠI</button>
+                            <button class="btn btn--primary" onclick="DatHangThanhCong()">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

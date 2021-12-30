@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản lý đơn hàng</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng điện thoại di động The PS</title>
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/bill.css">
+    <link
+      class="jsbin"
+      href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      class="jsbin"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+    ></script>
+    <script
+      class="jsbin"
+      src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"
+    ></script>
+    <meta charset="utf-8" />
+    <title>JS Bin</title>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+      article,
+      aside,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+    </style>
+</head>
+<body onLoad="loadAllBill()"">
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../assets/img/logo-banner/logotheps.png" alt="Company logo">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class='bx bx-left-arrow-alt'></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="../assets/img/logo-banner/logotheps.png" alt="User picture" class="profile-image">
+                <div class="sidebar-user-name">
+                    Theps
+                </div>
+            </div>
+            <button class="btn btn-outline">
+                <i class='bx bx-log-out bx-flip-horizontal'></i>
+            </button>
+        </div>
+        <ul class="sidebar-menu">
+            <li>
+                <a href="index.html" class="active">
+                    <i class='bx bx-home'></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li>
+                <a href="customer.html">
+                    <i class='bx bx-user-pin'></i>
+                    <span>Khách hàng</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class='bx bx-category'></i>
+                    <span>Sản phẩm</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="product.html">
+                            Thêm sản phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bill.html">
+                            Đơn hàng
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+        </ul>
+    </div>
+           <!-- MAIN CONTENT -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+            <div class="main-title">
+                Trang chủ admin
+            </div>
+        </div>
+	</div>
+	<div class="panel" style="margin-top: 50px;">
+		<div class="panel-heading">
+			Danh sách đơn hàng
+		</div>
+		<div class="panel-body">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Stt</th>
+						<th>
+						<th>Khách hàng</th>
+						<th>Tình trạng</th>
+						<th>Giá</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="result">
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br>
+    <!-- END MAIN CONTENT -->
+    <div class="overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="./js/bill.js"> </script>
+	<script src="./js/app.js"></script>
+</body>
+</html>
